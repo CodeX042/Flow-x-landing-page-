@@ -33,12 +33,15 @@ const BannerContainer = styled.div`
   position: relative;
   gap: 50px;
   padding: 0 20px; /* Add padding to prevent overflow on mobile */
+  width: 100%;
+  overflow-x: hidden;
 
   /* Responsive design */
   @media (max-width: 768px) {
     height: 92vh; /* Keep content within 90vh */
-    padding: 0 10px; /* Adjust padding on mobile */
+    padding: 30px; /* Adjust padding on mobile */
     gap: 10px;
+    width: 100%;
   }
 `;
 
@@ -84,7 +87,7 @@ const Motto = styled.div`
 
   /* Responsive design for motto */
   @media (max-width: 768px) {
-    font-size: 48px; /* Reduce font size on mobile */
+    font-size: 38px; /* Reduce font size on mobile */
     width: 90%; /* Adjust width for smaller screens */
     line-height: normal;
   }
@@ -102,6 +105,25 @@ const Description = styled.div`
   @media (max-width: 768px) {
     font-size: 18px; /* Reduce font size on mobile */
     width: 90%; /* Adjust width for smaller screens */
+  }
+`;
+
+const FloatingText = styled.div`
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 39.69px;
+  text-align: center;
+  width: 152px;
+  height: 80px;
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  color: #fff;
+  z-index: 10;
+
+  @media (max-width: 768px) {
+    font-size: 18px; /* Reduce font size on mobile */
+    position: static;
   }
 `;
 
@@ -155,6 +177,7 @@ const Banner = () => {
         and secure payments. Driving innovation in high-growth markets.
       </Description>
       <Button buttonTitle={"Start Building"} />
+      <FloatingText>BUILT ON SUI</FloatingText>
     </BannerContainer>
   );
 };

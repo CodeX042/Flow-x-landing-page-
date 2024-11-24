@@ -49,13 +49,16 @@ const Footer = () => {
     <FooterContainer>
       <img src="/logo_dark.svg" alt="logo" />
       <Socials>
-        <Social href="/">
+        <Social
+          href="/https://x.com/CodeXlab042?t=Ub5y4NjjrK2rSUX2s8wA5w&s=09"
+          target="_blank"
+        >
           <FaXTwitter />
         </Social>
-        <Social href="/">
+        <Social href="/" target="_blank">
           <FaGithub />
         </Social>
-        <Social href="/">
+        <Social href="https://discord.gg/29bJvYpF" target="_blank">
           <FaDiscord />
         </Social>
       </Socials>

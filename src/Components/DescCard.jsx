@@ -8,11 +8,10 @@ const CardContainer = styled.div`
   align-items: center;
   justify-content: center;
   gap: 50px;
-  width: 510px;
+  width: 100%;
 
   /* Responsive design */
   @media (max-width: 768px) {
-    width: 100%; /* Full width on mobile */
     gap: 20px; /* Adjust gap between elements */
     padding: 0 20px; /* Add padding to prevent overflow on smaller screens */
   }
@@ -24,8 +23,8 @@ const Icon = styled.img`
 
   /* Responsive design for icon */
   @media (max-width: 768px) {
-    width: 100px; /* Scale down the icon on mobile */
-    height: 100px; /* Scale down the icon on mobile */
+    width: 80px; /* Scale down the icon on mobile */
+    height: 80px; /* Scale down the icon on mobile */
   }
 `;
 
