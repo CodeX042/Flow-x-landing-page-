@@ -33,6 +33,9 @@ const HowItWorks = () => {
           "FlowX is a fast, secure, and scalable cross-border liquidity protocol on SUI, empowering developers with stable coins, real-time FX oracles, and automated market makers to revolutionize African financial systems."
         }
         btnText={"Explore"}
+        btnLink={
+          "https://flow-x-5sdk.vercel.app/docs/introduction/installation"
+        }
       />
       <DescCard
         imageSrc={"/world.svg"}
@@ -41,6 +44,7 @@ const HowItWorks = () => {
           "FlowX is a transformable solution that addresses the core challenges of Africa's financial systems with fast, secure, and low-cost stablecoin transactions, real-time FX rates, and seamless cross-border payments, driving economic growth and innovation."
         }
         btnText={"Learn More"}
+        btnLink={"https://flow-x-5sdk.vercel.app/docs/introduction/setup"}
       />
       <DescCard
         imageSrc={"/hold.svg"}
@@ -49,6 +53,7 @@ const HowItWorks = () => {
           "FlowX delivers fast, low-cost stablecoin transactions, real-time FX rate accuracy, and developer-friendly APIs, offering unmatched reliability for creating scalable financial solutions. Build on FlowX to power the future of cross-border payments."
         }
         btnText={"Get Started"}
+        btnLink={"https://flow-x-5sdk.vercel.app/docs/introduction/changelog"}
       />
     </Container>
   );

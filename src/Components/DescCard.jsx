@@ -54,13 +54,13 @@ const Desc = styled.div`
   }
 `;
 
-const DescCard = ({ imageSrc, title, desc, btnText }) => {
+const DescCard = ({ imageSrc, title, desc, btnText, btnLink }) => {
   return (
     <CardContainer>
       <Icon src={imageSrc} />
       <Title>{title}</Title>
       <Desc>{desc}</Desc>
-      <Button buttonTitle={btnText} />
+      <Button buttonTitle={btnText} btnLink={btnLink} />
     </CardContainer>
   );
 };

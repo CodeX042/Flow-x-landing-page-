@@ -7,7 +7,7 @@ const GradientWrapper = styled.div`
   border-radius: 8px;
 `;
 
-const ButtonContainer = styled.div`
+const ButtonContainer = styled.a`
   position: relative;
   width: 400px;
   height: 99px;
@@ -25,6 +25,7 @@ const ButtonContainer = styled.div`
   z-index: 10;
   border-radius: 8px;
   transition: background 0.3s ease-in-out, color 0.1s ease-in-out; /* Smooth transition */
+  text-decoration: none;
 
   &:hover {
     background: linear-gradient(
@@ -43,10 +44,10 @@ const ButtonContainer = styled.div`
   }
 `;
 
-const Button = ({ buttonTitle }) => {
+const Button = ({ buttonTitle, btnLink }) => {
   return (
     <GradientWrapper>
-      <ButtonContainer>{buttonTitle}</ButtonContainer>
+      <ButtonContainer href={btnLink}>{buttonTitle}</ButtonContainer>
     </GradientWrapper>
   );
 };

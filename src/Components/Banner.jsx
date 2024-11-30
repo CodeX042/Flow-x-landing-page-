@@ -176,7 +176,12 @@ const Banner = () => {
         FlowX empowers developers to harness stablecoins for seamless, low-cost,
         and secure payments. Driving innovation in high-growth markets.
       </Description>
-      <Button buttonTitle={"Start Building"} />
+      <Button
+        buttonTitle={"Start Building"}
+        btnLink={
+          "https://flow-x-5sdk.vercel.app/docs/introduction/installation"
+        }
+      />
       <FloatingText>BUILT ON SUI</FloatingText>
     </BannerContainer>
   );
